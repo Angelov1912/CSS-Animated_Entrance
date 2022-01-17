@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="script.js" defer></script>
   </head>
   <body>
     <!--Wrapper for all articles-->
     <div class="articles-grid">
+      <!--Single article cards starts here-->
       <article class="article-card animate glow delay-1">
         <div class="thumbnail-wrap">
           <a href="/index.html">
@@ -49,6 +52,7 @@
           </div>
         </div>
       </article>
+      <!--Single article cards starts here-->
       <article class="article-card animate glow delay-2">
         <div class="thumbnail-wrap">
           <a href="/index.html">
@@ -88,6 +92,7 @@
           </div>
         </div>
       </article>
+      <!--Single article cards starts here-->
       <article class="article-card animate glow delay-3">
         <div class="thumbnail-wrap">
           <a href="/index.html">
@@ -127,6 +132,18 @@
           </div>
         </div>
       </article>
+    </div>
+    <div id="box">
+      <!--This is a container for the box of the info card-->
+      <img src="avatar.jpeg" alt="photo of a person with blue shirt" />
+      <div>
+        <div class="title">Stanimir Angelov</div>
+        <!--Container for the name of the person-->
+        <div class="pos">Web Developer</div>
+        <!--The position or profession of the person-->
+        <button class="close">X</button>
+        <!--Container for the closing button-->
+      </div>
     </div>
   </body>
 </html>
