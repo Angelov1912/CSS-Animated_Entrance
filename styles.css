@@ -8,7 +8,7 @@ html {
   overflow-x: hidden;
   --featured-img: linear-gradient(180deg, rgb(0, 17, 255), #860000);
   --bg-blend-mode: overlay;
-  background-color: #262626;
+  background-color: #000000;
   background-position: top center;
   background-repeat: no-repeat;
   background-image: radial-gradient(
@@ -201,14 +201,13 @@ article {
 #box .title {
   font-size: 1em;
   font-weight: bold;
-  margin-bottom: .3em;
+  margin-bottom: 0.3em;
 }
 
 /*Adjust the font size for the position (profession) */
 #box .pos {
-  font-size: .8em;
+  font-size: 0.8em;
 }
-
 
 /*Style for the closing X button of the card*/
 #box .close {
@@ -216,8 +215,8 @@ article {
   display: flex;
   justify-content: center;
   align-items: center;
-  top: .5em;
-  right: .5em;
+  top: 0.5em;
+  right: 0.5em;
   width: 1.7em;
   height: 1.7em;
   border: none;
@@ -225,5 +224,112 @@ article {
   background-color: #888;
   color: #fff;
   cursor: pointer;
-  font-size: .7em;
+  font-size: 0.7em;
+}
+
+/*Add Media Queries for responsive and mobile design*/
+/*Small Mobile*/
+@media (max-width: 600px) {
+  html {
+    background-color: rgb(50, 75, 116);
+    background-image: none;
+  }
+
+  body {
+    width: 100%;
+    padding: 5%;
+  }
+
+  .articles-grid {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+  }
+
+  .article-card {
+    width: 100%;
+    margin: 2% 0%;
+  }
+
+  #box {
+    width: 40%;
+    font-size: 0.7em;
+  }
+
+  #box img {
+    border-radius: 50%;
+    width: 2.7em;
+    height: 2.7em;
+    margin-right: 0;
+  }
+}
+
+/*Larger mobile and small tablets*/
+@media (min-width: 600px) and (max-width: 768px) {
+  html {
+    background-color: rgb(50, 75, 116);
+    background-image: none;
+  }
+
+  body {
+    width: 100%;
+    padding: 5%;
+  }
+
+  .articles-grid {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+  }
+
+  .article-card {
+    width: 100%;
+    margin: 2% 0%;
+  }
+
+  #box {
+    width: 30%;
+    font-size: 0.7em;
+  }
+
+  #box img {
+    border-radius: 50%;
+    width: 2.7em;
+    height: 2.7em;
+    margin-right: 0;
+  }
+}
+
+/*Tablets and bigger screens (horizontal etc.)*/
+@media (min-width: 768px) and (max-width: 992px) {
+  html {
+    background-image: none;
+    background-color: rgb(50, 75, 116);
+  }
+
+  .articles-grid {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+  }
+
+  .article-card {
+    width: 100%;
+    margin: 2% 0%;
+  }
+
+  #box {
+    width: 35%;
+    font-size: 1em;
+  }
+
+  #box img {
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+    margin-right: 0;
+  }
 }
